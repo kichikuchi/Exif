@@ -18,7 +18,6 @@ let exif = Exif(ciimage: ciimage)
 let url = URL(fileURLWithPath: pathString)
 let exif = Exif(contentsOf: url)
 
-//
 ```
 
 ### access
