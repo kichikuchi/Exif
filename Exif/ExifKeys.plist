@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>PixelXDimension</string>
+	<string>PixelYDimension</string>
+	<string>SubjectArea</string>
+	<string>LensMake</string>
+	<string>LensModel</string>
+	<string>LensSpecification</string>
+	<string>FocalLenIn35mmFilm</string>
+	<string>ColorSpace</string>
+	<string>WhiteBalance</string>
+	<string>BrightnessValue</string>
+	<string>ApertureValue</string>
+	<string>ShutterSpeedValue</string>
+	<string>ISOSpeedRatings</string>
+	<string>SensingMethod</string>
+	<string>FocalLength</string>
+	<string>FNumber</string>
+	<string>ExposureProgram</string>
+	<string>ExposureMode</string>
+	<string>ExposureBiasValue</string>
+	<string>ExposureTime</string>
+	<string>MeteringMode</string>
+	<string>Flash</string>
+	<string>FlashPixVersion</string>
+	<string>DateTimeOriginal</string>
+	<string>DateTimeDigitized</string>
+	<string>SubsecTimeOriginal</string>
+	<string>SubsecTimeDigitized</string>
+	<string>SceneType</string>
+	<string>SceneCaptureType</string>
+	<string>ComponentsConfiguration</string>
+	<string>ExifVersion</string>
+</array>
+</plist>
