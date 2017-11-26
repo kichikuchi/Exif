@@ -10,11 +10,11 @@ import Foundation
 
 extension String {
     func stringArray() -> [String]? {
-        guard self.characters.count > 2 else {
+        guard self.count > 2 else {
             return nil
         }
         
-        let parenthesesDeletedText = self.substring(with: self.index(self.startIndex, offsetBy: 1)..<self.index(self.endIndex, offsetBy: -1))
+        let parenthesesDeletedText = String(self.prefix(self.count - 1)).suffix(self.count - 2)
         let separated = parenthesesDeletedText.components(separatedBy: ",")
         return separated.map{ $0.trimmingCharacters(in: .whitespaces) }
     }
