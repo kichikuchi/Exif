@@ -38,7 +38,7 @@ exif.fNumber // exif has 31 properties
 
 ## Requirements
 
-- Swift 4 / Xcode 8.1
+- Swift 4 / Xcode 9.1
 - iOS 9.0 or later
 
 ## Installation
