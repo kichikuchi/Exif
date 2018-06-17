@@ -10,7 +10,6 @@ import UIKit
 
 fileprivate let keys = NSArray(contentsOfFile: Bundle(identifier: "com.kichikuchi.Exif")!.path(forResource: "ExifKeys", ofType: "plist")!) as! Array<String>
 
-
 public struct Exif {
     
     public let properties: [(key: String, value: String)]
@@ -86,17 +85,17 @@ public struct Exif {
         // set each property
         pixelWidth = Int(properties[0].value)
         pixelHeight = Int(properties[1].value)
-        area = properties[2].value.stringArray()?.flatMap{Int($0)}
+        area = properties[2].value.stringArray()?.compactMap{Int($0)}
         lensMaker = properties[3].value.isNotHyphen()
         lensModel = properties[4].value.isNotHyphen()
-        lensSpecification = properties[5].value.stringArray()?.flatMap{Double($0)}
+        lensSpecification = properties[5].value.stringArray()?.compactMap{Double($0)}
         focalIn35mmFilm = Int(properties[6].value)
         colorSpace = Int(properties[7].value)
         whiteBalance = Int(properties[8].value)
         brightness = Double(properties[9].value)
         aperture = Double(properties[10].value)
         shutterSpeed = Double(properties[11].value)
-        isoSpeed = properties[12].value.stringArray()?.flatMap{Int($0)}
+        isoSpeed = properties[12].value.stringArray()?.compactMap{Int($0)}
         sensingMethod = Int(properties[13].value)
         focalLength = Double(properties[14].value)
         fNumber = Double(properties[15].value)
@@ -106,15 +105,15 @@ public struct Exif {
         exposureTime = Double(properties[19].value)
         meteringMode = Int(properties[20].value)
         flash = Int(properties[21].value)
-        flashVersion = properties[22].value.stringArray()?.flatMap{Int($0)}
+        flashVersion = properties[22].value.stringArray()?.compactMap{Int($0)}
         dateTimeOriginal = properties[23].value.isNotHyphen()?.dateFromString()
         dateTimeDigitized = properties[24].value.isNotHyphen()?.dateFromString()
         subsecondTimeOriginal = Int(properties[25].value)
         subsecondTimeDigitized = Int(properties[26].value)
         sceneType = Int(properties[27].value)
         sceneCaptureType = Int(properties[28].value)
-        componentsConfiguration = properties[29].value.stringArray()?.flatMap{Int($0)}
-        version = properties[30].value.stringArray()?.flatMap{Int($0)}
+        componentsConfiguration = properties[29].value.stringArray()?.compactMap{Int($0)}
+        version = properties[30].value.stringArray()?.compactMap{Int($0)}
     }
 }
 
