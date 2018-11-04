@@ -4,7 +4,6 @@ xcuserdata
 *.xccheckout
 *.mode*
 *.pbxuser
-xcshareddata
 
 Carthage/Build
 .build
