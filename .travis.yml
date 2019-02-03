@@ -1,5 +1,4 @@
 osx_image: xcode10.1
 language: swift
 xcode_project: Exif.xcodeproj
-xcode_scheme: Exif
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
