@@ -3,4 +3,4 @@ osx_image: xcode10.1
 
 script:
   - set -o pipefail
-  - xcodebuild test -project Exif.xcodeproj -scheme "ExifTests" ONLY_ACTIVE_ARCH=NO | xcpretty;
+  - xcodebuild test -project Exif.xcodeproj -scheme "ExifTests" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,OS=12.1,name=iPhone X' | xcpretty;
