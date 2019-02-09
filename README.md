@@ -1,4 +1,5 @@
 # Exif
+[![Build Status](https://travis-ci.org/kichikuchi/Exif.svg?branch=master)](https://travis-ci.org/kichikuchi/Exif)
 
 This is a Swift framework providing Exif.
 

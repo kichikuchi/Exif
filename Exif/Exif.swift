@@ -46,8 +46,8 @@ public struct Exif {
     public let componentsConfiguration: [Int]?
     public let version: [Int]?
     
-    public init(forResource name: String, ofType type: String) {
-        let path = Bundle.main.path(forResource: name, ofType: type)
+    public init(forResource name: String, ofType type: String, bundle: Bundle = Bundle.main) {
+        let path = bundle.path(forResource: name, ofType: type)
         assert(path != nil, "please enter correct resource name and type")
         
         let url = URL(fileURLWithPath: path!)
