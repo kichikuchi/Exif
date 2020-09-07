@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6019B7A12506628400387955 /* Exif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A44E4E1E21F5DF00786ABF /* Exif.framework */; };
 		A9A44E531E21F5DF00786ABF /* Exif.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A44E511E21F5DF00786ABF /* Exif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9A44E5A1E21F6CA00786ABF /* Exif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A44E591E21F6CA00786ABF /* Exif.swift */; };
 		A9A44E5C1E21F7CA00786ABF /* ExifKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A44E5B1E21F7CA00786ABF /* ExifKeys.plist */; };
@@ -73,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6019B7A12506628400387955 /* Exif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,10 +221,12 @@
 					};
 					A9BA8D66220EA5620079055A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 					};
 					A9F03EF31FCB0C2E005EB1B7 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1160;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -511,7 +515,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.ExifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -534,7 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.ExifTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -556,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -578,7 +582,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

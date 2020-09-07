@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let exif = Exif(forResource: "sample", ofType: "jpg")
-        print(exif.properties)
+        if let exif = Exif(forResource: "sample", ofType: "jpg") {
+            print(exif.properties)
+        }
     }
-
 }
 
