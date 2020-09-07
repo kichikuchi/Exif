@@ -6,6 +6,7 @@
 //  Copyright © 2017年 kazunori kikuchi. All rights reserved.
 //
 
+import Foundation
 #if canImport(UIKit)
 fileprivate let keys = NSArray(contentsOfFile: Bundle(identifier: "com.kichikuchi.Exif")!.path(forResource: "ExifKeys", ofType: "plist")!) as! Array<String>
 
