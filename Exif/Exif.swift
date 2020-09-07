@@ -8,6 +8,8 @@
 
 import Foundation
 #if canImport(UIKit)
+import UIKit
+
 fileprivate let keys = NSArray(contentsOfFile: Bundle(identifier: "com.kichikuchi.Exif")!.path(forResource: "ExifKeys", ofType: "plist")!) as! Array<String>
 
 public struct Exif {
