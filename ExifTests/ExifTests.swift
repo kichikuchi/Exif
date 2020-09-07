@@ -11,7 +11,7 @@ import XCTest
 
 class ExifTests: XCTestCase {
     func testExif() {
-        let exif = Exif(forResource: "test", ofType: "jpg", bundle: Bundle(for: type(of: self)))
+        guard let exif = Exif(forResource: "test", ofType: "jpg", bundle: Bundle(for: type(of: self))) else { return }
         
         XCTAssertNotNil(exif)
         XCTAssertEqual(exif.pixelWidth, 756)

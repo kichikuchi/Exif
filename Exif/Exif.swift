@@ -6,6 +6,8 @@
 //  Copyright © 2017年 kazunori kikuchi. All rights reserved.
 //
 
+import Foundation
+#if canImport(UIKit)
 import UIKit
 
 fileprivate let keys = NSArray(contentsOfFile: Bundle(identifier: "com.kichikuchi.Exif")!.path(forResource: "ExifKeys", ofType: "plist")!) as! Array<String>
@@ -46,7 +48,7 @@ public struct Exif {
     public let componentsConfiguration: [Int]?
     public let version: [Int]?
     
-    public init(forResource name: String, ofType type: String, bundle: Bundle = Bundle.main) {
+    public init?(forResource name: String, ofType type: String, bundle: Bundle = Bundle.main) {
         let path = bundle.path(forResource: name, ofType: type)
         assert(path != nil, "please enter correct resource name and type")
         
@@ -54,11 +56,12 @@ public struct Exif {
         self.init(contentsOf: url)
     }
     
-    public init(contentsOf url: URL) {
-        let ciimage = CIImage(contentsOf: url)
-        assert(ciimage != nil, "please enter correct url")
-        
-        self.init(ciimage: ciimage!)
+    public init?(contentsOf url: URL) {
+        if let ciimage = CIImage(contentsOf: url) {
+            self.init(ciimage: ciimage)
+        } else {
+            return nil
+        }
     }
     
     public init(ciimage: CIImage) {
@@ -128,3 +131,4 @@ extension Exif: CustomStringConvertible {
         return description
     }
 }
+#endif
