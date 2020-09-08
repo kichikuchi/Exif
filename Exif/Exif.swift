@@ -10,7 +10,39 @@ import Foundation
 #if canImport(UIKit)
 import UIKit
 
-fileprivate let keys = NSArray(contentsOfFile: Bundle(identifier: "com.kichikuchi.Exif")!.path(forResource: "ExifKeys", ofType: "plist")!) as! Array<String>
+private let keys = [
+    "PixelXDimension",
+    "PixelYDimension",
+    "SubjectArea",
+    "LensMake",
+    "LensModel",
+    "LensSpecification",
+    "FocalLenIn35mmFilm",
+    "ColorSpace",
+    "WhiteBalance",
+    "BrightnessValue",
+    "ApertureValue",
+    "ShutterSpeedValue",
+    "ISOSpeedRatings",
+    "SensingMethod",
+    "FocalLength",
+    "FNumber",
+    "ExposureProgram",
+    "ExposureMode",
+    "ExposureBiasValue",
+    "ExposureTime",
+    "MeteringMode",
+    "Flash",
+    "FlashPixVersion",
+    "DateTimeOriginal",
+    "DateTimeDigitized",
+    "SubsecTimeOriginal",
+    "SubsecTimeDigitized",
+    "SceneType",
+    "SceneCaptureType",
+    "ComponentsConfiguration",
+    "ExifVersion",
+]
 
 public struct Exif {
     
