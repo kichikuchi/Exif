@@ -10,7 +10,6 @@
 		6019B7A12506628400387955 /* Exif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A44E4E1E21F5DF00786ABF /* Exif.framework */; };
 		A9A44E531E21F5DF00786ABF /* Exif.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A44E511E21F5DF00786ABF /* Exif.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9A44E5A1E21F6CA00786ABF /* Exif.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A44E591E21F6CA00786ABF /* Exif.swift */; };
-		A9A44E5C1E21F7CA00786ABF /* ExifKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A44E5B1E21F7CA00786ABF /* ExifKeys.plist */; };
 		A9A44EA31E220C8500786ABF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A44EA21E220C8500786ABF /* StringExtension.swift */; };
 		A9BA8D6A220EA5620079055A /* ExifTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BA8D69220EA5620079055A /* ExifTests.swift */; };
 		A9BA8D6C220EA5620079055A /* Exif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A44E4E1E21F5DF00786ABF /* Exif.framework */; };
@@ -38,7 +37,6 @@
 		A9A44E511E21F5DF00786ABF /* Exif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exif.h; sourceTree = "<group>"; };
 		A9A44E521E21F5DF00786ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A44E591E21F6CA00786ABF /* Exif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exif.swift; sourceTree = "<group>"; };
-		A9A44E5B1E21F7CA00786ABF /* ExifKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ExifKeys.plist; sourceTree = "<group>"; };
 		A9A44EA21E220C8500786ABF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A9BA8D67220EA5620079055A /* ExifTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExifTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BA8D69220EA5620079055A /* ExifTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExifTests.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				A9A44E521E21F5DF00786ABF /* Info.plist */,
-				A9A44E5B1E21F7CA00786ABF /* ExifKeys.plist */,
 				A9A44E511E21F5DF00786ABF /* Exif.h */,
 				A9A44E591E21F6CA00786ABF /* Exif.swift */,
 				A9A44EA21E220C8500786ABF /* StringExtension.swift */,
@@ -256,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A44E5C1E21F7CA00786ABF /* ExifKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +463,7 @@
 				INFOPLIST_FILE = Exif/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.Exif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -489,7 +485,7 @@
 				INFOPLIST_FILE = Exif/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.7;
+				MARKETING_VERSION = 0.0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kichikuchi.Exif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
